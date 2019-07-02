@@ -1,0 +1,38 @@
+{
+    "name": "parceljs-experiments",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samnoh/parceljs-experiments.git"
+    },
+    "keywords": [
+        "React",
+        "Parcel"
+    ],
+    "author": "Sam Noh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/samnoh/parceljs-experiments/issues"
+    },
+    "homepage": "https://github.com/samnoh/parceljs-experiments#readme",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel public/index.html --port 3000",
+        "build": "parcel build public/index.html --out-dir build --no-cache"
+    },
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.6",
+        "parcel-bundler": "^1.12.3",
+        "react-hot-loader": "^4.12.0"
+    }
+}
