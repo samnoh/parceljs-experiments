@@ -1,10 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    body {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+`;
+
+const Title = styled.h1`
+    color: blue;
+    &:hover {
+        color: gray;
+    }
+`;
 
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
+            <GlobalStyle />
+            <Title>Home</Title>
             <Link to="/counter">Counter</Link>
         </>
     );
