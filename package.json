@@ -20,7 +20,7 @@
     "homepage": "https://github.com/samnoh/parceljs-experiments#readme",
     "scripts": {
         "start": "parcel public/index.html --port 3000 --open",
-        "build": "rm -rf build && parcel build public/index.html --out-dir build --no-cache --no-source-maps"
+        "build": "rm -rf build && parcel build public/index.html --out-dir build --no-cache --no-source-maps && serve -s build/"
     },
     "dependencies": {
         "@loadable/component": "^5.10.1",
@@ -34,6 +34,7 @@
         "@babel/preset-react": "^7.0.0",
         "babel-loader": "^8.0.6",
         "parcel-bundler": "^1.12.3",
-        "react-hot-loader": "^4.12.0"
+        "react-hot-loader": "^4.12.0",
+        "serve": "^11.0.2"
     }
 }
